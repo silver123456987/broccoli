@@ -4,7 +4,6 @@ hello everybody
 please guys i need your help. im creating an app, and i want to display online users data (image and username) near a query Geofire, 
 using a recyclerView. here is my code:
 
-package com.mokh.acer.widwin;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -29,8 +28,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.MutableData;
 import com.google.firebase.database.Transaction;
-import com.mokh.acer.widwin.model.Post;
-import com.mokh.acer.widwin.utils.Constants;
 
 import java.util.HashSet;
 
@@ -168,12 +165,6 @@ public class FetchedUsers extends AppCompatActivity {
            postViewersIV = itemView.findViewById(R.id.viewers_tv);
            numViewersTV = itemView.findViewById(R.id.num_viewers_tv);
        }
-
-        // public void setPostImage(String url){
-        //    StorageReference profileImageRef =
-        //           FirebaseStorage.getInstance().getReference("profilepics/"+System.currentTimeMillis()+".jpg");
-        // }
-
 
        public void setNumViewers(Long num){
            numViewersTV.setText(String.valueOf(num));
